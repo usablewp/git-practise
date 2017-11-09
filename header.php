@@ -58,13 +58,14 @@
   <body <?php body_class(); ?> id="site-container">
     <ul class="screen-reader-text"><!-- For Screen Reader -->
       <li><a href="#main-content"><?php _e( 'Skip to main content', 'firstshow-tekzenit' ); ?></a></li>
+      <li><a href="#main-menu"><?php _e( 'skip to main menu','firstshow-tekzenit' ); ?></a></li>
       <li><a href="#footer"><?php _e( 'skip to footer','firstshow-tekzenit' ); ?></a></li>
     </ul>
     <?php
       // Load fly out sidebar
       get_template_part( "parts/fly-out-sidebar" );
     ?>
-    <div id="sb-site" class="page-wrapper" canvas="container">
+    <div id="sb-site" class="main-wrapper page-wrapper" canvas="container">
       <?php
         get_template_part( "parts/headers/logo-with-menu");
       ?>
