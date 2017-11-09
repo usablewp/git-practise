@@ -1,0 +1,130 @@
+.book-an-appointment-content{
+  padding:15px;
+  @media only screen and (min-width:601px){
+    max-width:1140px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 73vh;
+  }
+}
+
+#enquire-form, #book-an-appointment-form, #footer #enquire-now{
+  .gform_wrapper .gfield_date_dropdown_month, .gform_wrapper .gfield_date_dropdown_day, .gform_wrapper .gfield_date_dropdown_year{
+    margin-right: 0;
+    width:33.33%;
+  }
+  .gform_title{
+    display: block !important;
+  }
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: #fff !important;
+  width: 292px;
+  z-index: 101;
+  border: 1px solid #0081a0;
+
+  form h3{
+    display: block;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: black;
+    opacity: 1;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: black;
+    opacity: 1;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: black;
+    opacity: 1;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: black;
+    opacity: 1;
+  }
+
+  textarea{
+    height: 80px;
+  }
+  #gform_confirmation_message_1{
+    background-color:white;
+    margin-top:10px;
+  }
+  input, textarea, select{
+    font-size:15px;
+    width:100% !important;
+    border:0;
+    border-bottom:1px solid #666;
+  }
+  form h3{
+    color:$main-color;
+    margin-bottom:0;
+    font-size:24px;
+    font-weight: normal;
+  }
+  .gform_footer{
+    padding:0 !important;
+    img{
+      border:0;
+    }
+    .gform_button{
+      @include primary-button();
+      margin:0 auto;
+    }
+  }
+  .gform_wrapper{
+    margin:0;
+    ul.gform_fields li.gfield{
+      padding-right: 0;
+    }
+    label{
+      position: absolute;
+      left:-9999px;
+    }
+  }
+}
+#book-an-appointment-form{
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  @media only screen and (min-width:600px){
+    width:350px;
+  }
+}
+.appointment-bg{
+  background-size:cover;
+}
+#doctors-available{
+  margin:15px 0;
+  table{
+    border:1px solid #fafafa;
+    width:100%;
+    td{
+      background-color:transparent !important;
+    }
+    tr,td{
+      font-size:13px;
+      width:50%;
+      padding:5px;
+      border:1px solid #fafafa;
+    }
+  }
+}
+.is-not-sweet{
+  p{
+    font-weight: bold;
+    margin-bottom:0;
+  }
+  p:first-child{
+    color:white;
+    font-size:22px;
+  }
+  p:last-child{
+    color:#fdb92b;
+    font-size:30px;
+  }
+}

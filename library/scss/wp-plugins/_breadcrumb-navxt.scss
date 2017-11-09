@@ -1,0 +1,15 @@
+.breadcrumbs{
+  padding:10px 15px;
+  margin-bottom:30px;
+  color:#666;
+  border-radius: 4px;
+  font-size:13px;
+  text-align: center;
+  [property = "itemListElement"]{
+    margin:0 5px;
+    display: inline-block;
+  }
+  a:hover, a:focus{
+    border-bottom:1px solid #ccc;
+  }
+}

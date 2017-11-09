@@ -1,0 +1,272 @@
+.edd_checkout a{
+  width:100%;
+  display: block;
+  border-radius: 4px;
+}
+.widget_edd_cart_widget .edd-cart-meta{
+  background-color: transparent;
+  border-top: 1px dashed #ccc;
+  padding-left: 0;
+  padding-top: 10px;
+}
+.edd-meta{
+  margin-top:15px;
+  .categories a{
+    padding:5px;
+    margin-left:5px;
+    border-radius: 4px;
+  }
+}
+#edd_checkout_wrap,
+#edd_login_form,
+#edd_register_form,
+.edd-logged-in,
+#edd_profile_editor_form{
+  border-radius: 4px;
+  overflow: hidden;
+  border:1px solid #ccc;
+}
+#edd_checkout_cart{
+  .edd_cart_item_image{
+    width:25px;
+    display: block;
+    @media only screen and (max-width:600px){
+      display: none;
+    }
+  }
+  .edd_cart_header_row th{
+    font-family: "Droid Serif", sans-serif;
+    padding:1em;
+  }
+}
+
+#edd_purchase_form,
+#edd_purchase_form fieldset#edd_cc_fields,
+#edd_profile_editor_form{
+  legend{
+    background-color: #efefef;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  legend, label{
+    font-family: "Droid Serif", sans-serif;
+  }
+}
+
+#edd_checkout_form_wrap {
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  input[type=tel],
+  textarea,
+  select{
+    padding:10px 6px;
+  }
+
+  //
+  #edd_discount_code,
+  #edd_purchase_submit,
+  #edd_register_account_fields{
+    padding:$edd-gutter;
+    padding-bottom:0;
+  }
+  //
+  .edd-payment-icons{
+    margin:$edd-gutter;
+  }
+  //
+  img{
+    width:auto;
+  }
+  //
+  fieldset{
+    border-left:0;
+    border-right: 0;
+  }
+  //
+  .edd-cart-adjustment input.edd-submit{
+    padding:0;
+    margin-bottom:12px;
+  }
+}
+#edd_cc_address{
+  select.edd-select{
+    width:70%;
+  }
+}
+
+.edd_cart_remove_item_btn{
+  font-size:16px;
+}
+.edd-alert{
+  margin:$edd-gutter;
+}
+fieldset .edd-alert{
+  margin:0;
+  margin-bottom:$edd-gutter;
+}
+
+#edd_purchase_receipt,
+#edd_purchase_receipt_products,
+#edd_user_history{
+  text-align: left;
+  width: 100%;
+  border: none;
+  margin: 0 0 21px;
+  table-layout: auto;
+  border-radius: 4px;
+  thead th{
+    padding:1em;
+    border:1px solid #eee;
+    border-top:0;
+    font-family: "Droid Serif", sans-serif;
+    font-size:18px;
+  }
+  td{
+    text-align: left;
+    border: 1px solid #eee;
+    padding: .5em 1em;
+    line-height:25px;
+    vertical-align:middle;
+  }
+  td:first-child,
+  th:first-child{
+    border-left:0;
+  }
+  td:last-child,
+  th:last-child{
+    border-right:0;
+  }
+  tbody tr:last-child{
+    td{
+      border-bottom:0;
+    }
+  }
+}
+#edd_checkout_cart {
+  th{
+    border-top:0;
+  }
+  td:first-child, th:first-child{
+    border-left:0;
+  }
+  td:last-child, th:last-child{
+    border-right:0;
+  }
+}
+
+.edd-success{
+  p{
+    text-align: center;
+  }
+  h3,h4,h5,h6{
+    text-align: center;
+  }
+  h3{
+    margin-top:50px;
+    font-size:25px;
+  }
+}
+.edd_price_options {
+  ~ .edd_purchase_submit_wrapper a.edd-add-to-cart.edd-has-js,
+  ~ .edd_purchase_submit_wrapper a.edd_go_to_checkout{
+    display: block;
+    margin-top:0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  &.edd_multi_mode {
+      background-color: white;
+      border-radius:4px;
+      border:1px solid $main-color;
+      margin-bottom:0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+  }
+  &.edd_multi_mode li{
+      padding:10px 15px;
+      border-bottom:1px solid #ccc;
+      &:last-child{
+        border-bottom:0;
+      }
+  }
+}
+.edd-remove-from-cart{
+  &:hover,&:focus{
+    border-bottom:1px solid #ccc;
+  }
+}
+.edd_empty_cart, .edd-failed-transaction .article-content{
+  padding:$edd-gutter;
+  display: block;
+  text-align: center;
+  font-size:14px;
+  border-radius: 4px;
+}
+.edd-failed-transaction .article-content{
+  border:1px solid #ccc;
+  p{
+    margin-bottom: 0;
+  }
+}
+
+.edd-logged-in{
+  text-align: center;
+  padding:$edd-gutter;
+}
+
+#edd_login_form, #edd_register_form, #edd_profile_editor_form{
+  padding:$edd-gutter;
+  //
+  .edd-input{
+    padding:6px 10px;
+    border-radius: 4px;
+  }
+  //
+  label{
+    font-family: "Droid Serif", serif;
+  }
+  //
+  label, .edd-input{
+    width:100%;
+    display: block;
+  }
+  //
+  legend{
+    text-align: center;
+  }
+}
+
+.widget_edd_cart_widget{
+  padding:20px;
+  border:1px solid #ccc;
+  border-radius: 4px;
+  .edd-cart-meta{
+    margin:10px 0;
+  }
+}
+#edd_profile_editor_form{
+  legend {
+    line-height: 1;
+    margin:30px 0;
+    font-size:120%;
+  }
+  //
+  .edd-select{
+    line-height: 30px;
+    width:100%;
+    border-radius: 5px;
+    padding:6px 10px;
+  }
+}
+.edd_form{
+  fieldset:not(:last-child){
+    margin-bottom:30px;
+  }
+}
+.edd_cart_remove_item_btn:hover, .edd_cart_remove_item_btn:focus{
+  border-bottom:1px solid #ccc;
+}

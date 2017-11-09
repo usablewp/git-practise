@@ -1,0 +1,14 @@
+h3.content-section-title,#comments h3{
+  text-align: center;
+  font-size:26px;
+}
+.wp-video{
+  margin-bottom:1rem;
+}
+.article-content{
+  > {
+    h3,h4,h5,h6{
+      margin-top:30px;
+    }
+  }
+}

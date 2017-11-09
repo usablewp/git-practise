@@ -1,0 +1,249 @@
+.page{
+  h3 a{
+    display: inline-block;
+    border-bottom:1px solid transparent;
+    &:hover{
+      border-bottom:1px solid #ccc;
+    }
+  }
+  h4{
+    font-size:19px;
+    font-weight: bold;
+  }
+}
+
+#main-content .article-content{
+  h2, h3, h4{
+    margin:25px 0 15px;
+    color:$main-color;
+  }
+  h2{
+    font-size:25px;
+  }
+  h3{
+    font-size:20px;
+  }
+  h4{
+    font-size:17px;
+  }
+}
+
+.page-article, .blog-posts{
+  > header{
+    h1{
+      padding-bottom:10px;
+      color:#007D9E;
+      margin-bottom:0;
+      font-size:30px;
+    }
+    background-color:#ecf8fc;
+    padding:0 50px;
+    @media only screen and (max-width:767px){
+      padding:0 15px;
+    }
+  }
+}
+
+
+
+.flex-container{
+  @media only screen and (min-width:1100px){
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top:1px solid #ccc;
+  }
+  @media only screen and (max-width:1099px){
+    border-left:1px solid #ccc;
+  }
+  .section{
+    @media only screen and (min-width:1100px){
+      border-top:1px solid #ccc;
+      top:-1px;
+    }
+    @media only screen and (max-width:1099px){
+      padding-left:20px;
+    }
+    position: relative;
+    &:before{
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: $main-color;
+      display: block;
+      position: absolute;
+      top: -4px;
+      left: 50%;
+      border-radius: 6px;
+      @media only screen and (max-width:1099px){
+        top:0;
+        left:-4px;
+      }
+    }
+  }
+  h4{
+    font-size:14px;
+    color:$main-color;
+    text-transform: uppercase;
+    margin-top:20px;
+    @media only screen and (min-width:1100px){
+      text-align: center;
+    }
+  }
+  li{
+    font-size:14px;
+  }
+}
+
+
+
+.page-template-default{
+  header + .container{
+    padding:50px 0;
+    @media only screen and (max-width:767px){
+      padding:15px;
+    }
+  }
+}
+
+.page-id-70{
+  .article-content{
+    max-width:700px;
+    margin:0 auto;
+  }
+}
+.article-content{
+  table{
+    margin:30px 0;
+    th{
+      background-color:$main-color;
+      color:white;
+      font-size:16px;
+      font-weight: normal;
+      text-align: center;
+    }
+    th, td{
+      padding:5px 10px;
+      border:1px solid #ccc;
+    }
+    td{
+      background-color:transparent !important;
+    }
+  }
+}
+
+.callToAction{
+  margin-top:15px;
+  background-color:$main-color;
+  padding:10px;
+  border-radius: 10px;
+  color:white;
+  font-size:14px;
+}
+
+.archive-title{
+  header &{
+    margin-bottom:0;
+  }
+}
+.sub-page-list{
+  .children{
+    display: none;
+  }
+  .current_page_item > .children,
+  .current_page_ancestor > .children{
+    display: block;
+  }
+}
+.sub-page-list, .sub-page-list-with-children{
+  &, li{
+    margin:0;
+    padding:0;
+    margin-left:0 !important;
+    list-style: none !important;
+  }
+
+  .children{
+    padding:10px;
+    margin-bottom:0;
+  }
+  .current_page_item > a,
+  .current_page_ancestor > a{
+    color:$main-color;
+  }
+  .pagenav, .review_categories{
+    background-color:#f6f6f6;
+  }
+
+  h3{
+    color:white !important;
+    margin-bottom:0;
+    a{
+      color:white !important;
+      border-bottom:0 !important;
+      font-size:18px !important;
+    }
+  }
+  ul{
+    padding:20px;
+  }
+  li:last-child > a{
+    border-bottom:0;
+  }
+  li a{
+    font-size:13px;
+    color:#525252;
+    border-bottom:1px solid #ccc;
+    display: block;
+    padding:5px 0;
+    &:hover{
+      color:$main-color;
+    }
+  }
+  h3, & + a{
+    background-color:$main-color;
+    color:white;
+    font-size:16px;
+    padding:13px;
+  }
+  & + a{
+    display: block;
+    margin-top:15px;
+    text-align: center;
+    &:hover{
+      background-color:#783978;
+    }
+  }
+
+}
+
+.page-template-customized-care{
+  .container{
+    padding-top:50px;
+    padding-bottom:50px;
+    @media only screen and (max-width:767px){
+      padding-top:15px;
+      padding-bottom:15px;
+    }
+  }
+  .entry-thumbnail{
+    @media only screen and (min-width:1020px){
+      margin-top:50px;
+    }
+  }
+}
+.page-id-3492{
+  #main-content p{
+    margin-bottom:0;
+    font-size:16px;
+    padding:50px;
+    background-color:#c9edfa;
+    min-height: 500px;
+      text-align: center;
+  }
+}
+
+.fl-accordion-button-label + p {
+    margin-bottom: 0 !important;
+    color:white;
+}

@@ -1,0 +1,22 @@
+.two-column-whistles{
+  overflow: hidden;
+  .plain-whistle{
+    box-sizing: border-box;
+    margin-bottom:20px;
+    @media only screen and (min-width:768px){
+      width:50%;
+      float:left;
+      margin-bottom:20px;
+    }
+    &:nth-child( odd ){
+      @media only screen and (min-width:768px){
+        padding-right:15px;
+      }
+    }
+    &:nth-child( even ){
+      @media only screen and (min-width:768px){
+        padding-left:15px;
+      }
+    }
+  }
+}

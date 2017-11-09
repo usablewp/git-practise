@@ -1,0 +1,29 @@
+.page-template-mab-member{
+  .doctor-image img,table{
+    margin-top:25px;
+    margin-bottom:25px;
+  }
+  th,td{
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+  td{
+    background-color:transparent !important;
+  }
+  th{
+    padding-right:30px;
+  }
+}
+
+.mab-accordion{
+  br{
+    display: none !important;
+  }
+  .fl-accordion-button{
+    background-color:$main-color;
+    color:white;
+  }
+  .fl-accordion-content{
+    padding-top:30px;
+  }
+}

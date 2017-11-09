@@ -1,0 +1,50 @@
+#sb-site input[type="submit"]{
+  margin-top:20px;
+  cursor: pointer;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="range"],
+input[type="date"],
+input[type="file"],
+input[type="password"],
+textarea{
+  border:1px solid #ccc;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+button[type="submit"],
+input[type="password"]{
+  -webkit-appearance:none;
+  -moz-apperance:none;
+  appearance:none;
+}
+
+.main-search-form{
+  .fields-container{
+    overflow:hidden;
+  }
+  input[type="search"]{
+    border:0;
+    padding:0 10px;
+    display: block;
+    width:calc( 100% - 35px );
+  }
+  input[type="search"],button{
+    float:left;
+    height: 35px;
+    line-height: 35px;
+  }
+  button{
+    width:35px;
+    display: block;
+    border:0;
+  }
+}

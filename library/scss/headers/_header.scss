@@ -1,0 +1,42 @@
+.header-content{
+  position: relative;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top:15px;
+  padding-bottom:15px;
+  @media only screen and (max-width:1019px){
+    margin:0;
+    padding:10px 0;
+  }
+}
+.logo a{
+  font-size:20px;
+  font-family: 'Droid Serif',serif;
+  display: block;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  img{
+    width: auto;
+    max-height:92px;
+    border:0;
+  }
+}
+.site-tagline{
+  font-size:14px;
+  margin-bottom: 0;
+  max-width:340px;
+  text-align: center;
+  @media only screen and (max-width:1019px){
+    display: none;
+  }
+}
+#main-header{
+  .mobile-menu-toggle,.cart{
+    padding:5px 10px;
+  }
+  .mobile-menu-toggle,.cart{
+    line-height: 1;
+    border-radius: 50px;
+  }
+}

@@ -1,0 +1,78 @@
+#footer{
+  padding:25px 15px;
+  background-color:#f1f2f2;
+  .container{
+    padding-top:7px;
+    padding-bottom:7px;
+  }
+  .menu{
+    text-align: right;
+  }
+  p{
+    margin-bottom:0;
+  }
+  @media only screen and (max-width:767px){
+    .menu,p{
+      text-align: center;
+    }
+  }
+}
+.copyright{
+  text-align: center;
+}
+#request-callback{
+  max-width:300px;
+}
+#footer{
+  #enquire-now{
+    .close-form{
+      font-size:20px;
+    }
+    display: none;
+    position: fixed;
+    right: 0px;
+    top: auto;
+    bottom: 15%;
+    padding: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 1000;
+    border: 1px solid #0081a0;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #fff !important;
+    width: 292px;
+    z-index: 101;
+    border: 1px solid #0081a0;
+  }
+}
+#ticker{
+  @media only screen and (max-width:767px){
+    display: none;
+  }
+  position: fixed;
+  right: 0px;
+  bottom: 15%;
+  a{
+    height: 45px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-weight: 700;
+    background-color: #1998d5;
+    color: white;
+    padding:6px 40px 6px 20px;
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+  a.hide-me{
+    display: none;
+  }
+  img{
+    margin-right: 10px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,25 @@
+.individual-testimonial, .individual-logo{
+  padding: 0px 10px;
+  background: rgba(0,0,0,.03);;
+  margin-bottom:15px;
+  border:1px solid rgba(0,0,0,.04);
+}
+.individual-testimonial label, .individual-logo label{
+  margin-bottom:5px;
+  display: block;
+}
+
+.individual-testimonial img, .individual-logo img{
+  display: block;
+  margin:10px 0;
+  max-width:200px;
+  width:auto;
+}
+.js-remove-testimonial, .js-remove-logo{
+  text-decoration: none;
+  display: block;
+  margin:10px 0;
+}
+.individual-testimonial select{
+  width:100px;
+}

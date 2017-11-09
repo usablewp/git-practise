@@ -1,0 +1,186 @@
+.wpcf7{
+  .wpcf7-form{
+    padding:30px;
+    border-radius: 4px;
+    &:after{
+      content: ".";
+      visibility: hidden;
+      display: block;
+      height: 0;
+      clear: both;
+    }
+    //
+    label{
+      color: black;
+      width:100%;
+    }
+    //
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="range"],
+    input[type="date"],
+    input[type="file"],
+    textarea{
+      width:100%;
+      border:0;
+      border-bottom:1px solid #ccc;
+      background-color:transparent;
+      font-family: "Droid Sans", sans-serif;
+    }
+    //
+    textarea{
+      height: 100px;
+    }
+    //
+    p:nth-last-of-type(1):after{
+      content: ".";
+      visibility: hidden;
+      display: block;
+      height: 0;
+      clear: both;
+    }
+    //
+    .ajax-loader{
+      display: block;
+      float: right;
+      margin-right: 20px;
+      margin-top: 23px;
+      background-color:white;
+      border-radius:4px;
+    }
+  }
+  [aria-invalid="true"]{
+    border-bottom:1px solid #c23636;
+  }
+  label{
+    display: inline-block;
+    font-family: "Droid Serif", serif;
+    .wpcf7-form-control{
+      margin-top:15px;
+      display: block;
+    }
+  }
+  input[type="submit"]{
+    float:right;
+  }
+  .wpcf7-not-valid-tip{
+    padding-top:10px;
+    padding-bottom:20px;
+    color:#ff4747;
+  }
+  .wpcf7-validation-errors,.wpcf7-mail-sent-ng{
+    border:0;
+    background-color:#ff4747;
+    padding-top:15px;
+    padding-bottom:15px;
+    margin-left:0;
+    margin-right:0;
+  }
+}
+
+.wpcf7-type-1-container{
+  padding:0;
+}
+
+.wpcf7{
+  .wpcf7-type-1-container{
+    background-color:transparent;
+    //
+    .wpcf7-type-1{
+      border:1px solid #ccc;
+      border-radius: 4px;
+      //
+      [aria-invalid="true"]{
+        border-bottom:1px solid #ff4747;
+      }
+      //
+      > div:last-child *{
+        border-bottom:0;
+      }
+    }
+    //
+    input[type="submit"]{
+      margin-top:10px;
+    }
+    padding:0;
+    //
+    br{
+      display: none;
+    }
+    //
+    .one-of-one{
+      clear:both;
+    }
+    //
+    .one-of-two{
+      float:left;
+      width:50%;
+    }
+    .border-to-the-right input{
+      border-right: 1px solid #ccc;
+    }
+    //
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="range"],
+    input[type="date"],
+    select,
+    label{
+      padding:10px 15px;
+    }
+    //
+    select{
+      margin-left:15px;
+      margin-bottom:15px;
+      margin-right:15px;
+      width:70%;
+      max-width:280px;
+      border-radius: 4px;
+      border:0;
+    }
+    //
+    input[type="date"]{
+      padding-top:0;
+    }
+    //
+    input[type="file"]{
+      padding:0 15px 10px;
+    }
+    //
+    textarea{
+      padding:15px;
+    }
+    //
+    .wpcf7-not-valid-tip{
+      padding-left:15px;
+      font-size:13px;
+    }
+    //
+    label{
+      margin-bottom:0;
+    }
+    //
+    ::-webkit-input-placeholder {
+       //opacity: 1;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+       //opacity: 1;
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+       //opacity: 1;
+    }
+
+    :-ms-input-placeholder {
+       //opacity: 1;
+    }
+
+  }
+}

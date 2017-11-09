@@ -1,0 +1,25 @@
+#main-content {
+  .tablepress{
+    border:1px solid #ccc;
+    border-radius: 4px;
+    tfoot th, thead th{
+      padding:1em;
+      font-family: "Droid Serif",serif;
+      font-size:18px;
+      border-right:1px solid #eee;
+      &:last-child{
+        border-right:0;
+      }
+    }
+    tbody{
+      td{
+        border-right: 1px solid #eee;
+        padding:.5em 1em;
+        &:last-child{
+          border-right:0;
+        }
+      }
+    }
+  }
+
+}

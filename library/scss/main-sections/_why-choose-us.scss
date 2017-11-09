@@ -1,0 +1,65 @@
+.why-choose-us{
+  p{
+    font-size:16px;
+  }
+  div{
+    padding:30px 150px;
+    @media only screen and (max-width:767px){
+      padding:0 15px;
+    }
+  }
+}
+.page-id-65{
+  figure{
+    padding:0 50px;
+    margin-top:30px;
+    @media only screen and (max-width:767px){
+      padding:0 15px;
+    }
+  }
+}
+#customized-care{
+  margin-bottom:30px;
+  tbody td{
+    background-color:transparent !important;
+    color:black !important;
+  }
+  #subject{
+    background-color:#c0e4f4;
+  }
+  #subjects-a-level{
+    background-color:#aadbe7;
+  }
+  #subjects-as-level{
+    background-color:#95d3E0;
+  }
+  th{
+    padding:10px;
+    color:white !important;
+  }
+  th:nth-child(1){
+    background-color:#2bb3d8;
+  }
+  th:nth-child(2){
+    background-color:#0d77a8;
+  }
+  th:nth-child(3){
+    background-color:#0b5e84;
+  }
+  td{
+    padding:10px;
+    border-bottom:1px solid #fff;
+    ul,li{
+      margin:0;
+      padding:0;
+      list-style: none;
+    }
+    li{
+      padding:10px 15px;
+      border-bottom:1px solid #fff;
+    }
+    @media only screen and (max-width:767px){
+      font-size:13px;
+    }
+  }
+}

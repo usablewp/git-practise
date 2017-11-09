@@ -1,0 +1,145 @@
+// Media Queries
+
+@mixin extra-large {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin large {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin medium {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin small {
+  @media only screen and (min-width: 576px) {
+    @content;
+  }
+}
+@mixin extra-small {
+  @media only screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+// Transitions
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// Cross Browser Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// Triangle
+@mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false){
+    @include pseudo($pos: $position);
+    width: 0;
+    height: 0;
+    @if $round {
+        border-radius: 3px;
+    }
+    @if $direction == down {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-top: $size solid $color;
+        margin-top: 0 - round( $size / 2.5 );
+    } @else if $direction == up {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-bottom: $size solid $color;
+        margin-bottom: 0 - round( $size / 2.5 );
+    } @else if $direction == right {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-left: $size solid $color;
+        margin-right: -$size;
+    } @else if  $direction == left {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-right: $size solid $color;
+        margin-left: -$size;
+    }
+}
+
+// Placeholder
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+// Box shadow specific to this theme
+@mixin tbe-box-shadow{
+  -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.75);
+}
+@mixin tbe-box-shadow-negative{
+  -webkit-box-shadow: -2px -2px 0px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px -2px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: -2px -2px 0px 0px rgba(0,0,0,0.75);
+}
+
+@mixin primary-button(){
+  border: none;
+  box-shadow: none;
+  background-color: #fdb92b;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  line-height: 35px;
+  margin: 20px;
+  display: block;
+  width: 100px !important;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px !important;
+}
+
+// generic transform
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+	 @include transform(scale($scale));
+}
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+//transform origin
+@mixin transform-origin ($origin) {
+    moz-transform-origin: $origin;
+	     -o-transform-origin: $origin;
+	    -ms-transform-origin: $origin;
+	-webkit-transform-origin: $origin;
+          transform-origin: $origin;
+}

@@ -1,0 +1,182 @@
+.diabetes-specialist .content p{
+  font-size:20px;
+  &:first-child{
+    background-image:url(library/images/designation-icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left:25px;
+    background-size:20px;
+  }
+  color:$main-color !important;
+}
+
+.individual-doctor{
+  border:8px solid #ebebeb;
+  background-color:white;
+  padding:15px;
+  margin:15px 0;
+  overflow:hidden;
+  .doctor-image{
+    float:left;
+    max-width:150px;
+    @media only screen and (max-width:700px){
+      max-width:90px;
+    }
+    @media only screen and (max-width:500px){
+      max-width:100%;
+      float:none;
+      margin-bottom:20px;
+    }
+  }
+  .doctor-information-table{
+    a{
+      float:right;
+      font-weight: normal;
+      font-size:14px;
+    }
+    table{
+      width:100%;
+    }
+    h3{
+      color:#787878;
+      font-size:20px;
+      float:left;
+    }
+    h4{
+      color:#787878;
+      font-size:16px;
+      margin-top:15px;
+    }
+    margin-left:170px;
+    @media only screen and (max-width:700px){
+      margin-left:100px;
+    }
+    @media only screen and (max-width:500px){
+      margin-left:0;
+    }
+    th,td{
+      font-size:14px;
+      border:1px solid #fafafa;
+      padding:5px;
+      @media only screen and (max-width:500px){
+        display: block;
+        width:100% !important;
+      }
+    }
+    th{
+      color:black;
+      font-weight: normal;
+      width:200px;
+    }
+    td{
+      width:500px;
+      background-color:transparent !important;
+      ul,li{
+        margin:0;
+        padding:0;
+        list-style: none;
+      }
+    }
+  }
+}
+.page-template-diabetes-specialists{
+  .content{
+    padding-bottom:20px;
+    border:0;
+  }
+  .clinics-filter-form{
+    margin-top:0;
+  }
+}
+
+.custom-breadcrumb{
+  padding-top:10px;
+  margin-bottom:15px;
+  border: 1px solid transparent;
+  display: inline-block;
+  &:hover{
+    border-bottom:1px solid #ccc;
+  }
+}
+.single-doctor{
+  padding-top:50px;
+  padding-bottom:50px;
+  @media only screen and (max-width:767px){
+    padding-top:15px;
+    padding-bottom:15px;
+  }
+  img{
+    margin-bottom:20px;
+    width:auto;
+  }
+  .introduction{
+    margin-bottom:30px;
+  }
+  table{
+    width:100%;
+  }
+  th{
+    font-size:14px;
+    font-weight: bold !important;
+  }
+  th,td{
+    font-size:14px;
+    border:1px solid #fafafa;
+    padding:5px;
+    @media only screen and (max-width:500px){
+      display: block;
+      width:100% !important;
+    }
+  }
+  th{
+    color:black;
+    font-weight: normal;
+    width:200px;
+  }
+  td{
+    width:500px;
+    background-color:transparent !important;
+    ul,li{
+      margin:0;
+      padding:0;
+      list-style: none;
+    }
+  }
+  h4{
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left:30px;
+    background-size:25px;
+    font-size:16px;
+  }
+  .experience h4{
+    background-image:url(library/images/experience-icon.jpg);
+  }
+  .specialization h4{
+    background-image:url(library/images/specialization-icon.jpg);
+  }
+  .education h4{
+    background-image:url(library/images/education-icon.jpg);
+  }
+  .qualification h4{
+    background-image:url(library/images/qualification-icon.png);
+  }
+  .designation h4{
+    background-image:url(library/images/designation-icon.png);
+  }
+  .city h4{
+    background-image:url(library/images/city-icon.png);
+  }
+  .locations h4{
+    background-image:url(library/images/clinic-location-icon.png);
+  }
+  .awards h4{
+    background-image:url(library/images/awards-icon.jpg);
+  }
+  .registration-number h4{
+    background-image:url(library/images/registration-icon.jpg);
+  }
+  .certification-and-membership h4{
+    background-image:url(library/images/certification-icon.jpg);
+  }
+}

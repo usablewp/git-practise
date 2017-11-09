@@ -1,0 +1,87 @@
+.page-template-diabetes-complications{
+  .article-content{
+    width:1000px;
+    margin:0 auto;
+    position: relative;
+    @media only screen and (max-width:999px){
+      display: none;
+    }
+  }
+  .diabetes-complications-links-mobile{
+    padding-top:30px;
+    @media only screen and (min-width:1000px){
+      display: none;
+    }
+  }
+  .cerebrovascular{
+    top: 53px;
+    right: 499px;
+  }
+  .retinopathy{
+    top: 70px;
+    right: 541px;
+  }
+  .oral-disorders{
+    top: 102px;
+    right: 539px;
+  }
+  .musculoskeletal{
+    top: 163px;
+    right: 560px;
+  }
+  .peripheral-vascular{
+    top: 181px;
+    right: 462px;
+  }
+  .cardiovascular{
+    top: 212px;
+    right: 481px;
+  }
+  .nephropathy{
+    top: 275px;
+    right: 521px;
+  }
+  .skin-disorders{
+    top: 290px;
+    right: 421px;
+  }
+  .neuropathy{
+    top: 309px;
+    right: 580px;
+  }
+  .diabetic-foot{
+    top: 666px;
+    right: 461px;
+  }
+  button{
+    width:20px;
+    height: 18px;
+    background-color:transparent;
+    border:0;
+    position: absolute;
+  }
+  .popover{
+    background-color:transparent;
+    border:1px dashed $main-color;
+    border-radius: 0;
+    margin-left:40px;
+    &:before{
+      display: none;
+    }
+    &:after{
+      border: 0;
+      content: "";
+      display: block;
+      width: 45px;
+      height: 1px;
+      background-color: $main-color;
+      margin-top: 0;
+      left: -46px;
+    }
+    .popover-content{
+      margin:15px;
+      background-color:#D4E9EF;
+      font-size:16px;
+    }
+  }
+}

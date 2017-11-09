@@ -1,0 +1,178 @@
+.home-page-intro{
+  position: relative;
+  .flexslider{
+    @media only screen and (max-width:1189px){
+      display: none;
+    }
+  }
+  #enquire-form{
+    .reachus{
+      @include primary-button();
+      width:auto !important;
+      padding-left:15px;
+      padding-right: 15px;
+      white-space: nowrap;
+      @media only screen and (min-width:1020px){
+        display: none;
+      }
+    }
+    .reachus-links{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @media only screen and (min-width:1190px){
+      position: absolute;
+      z-index: 2;
+      right:50px;
+      top:50%;
+      -webkit-transform:translateY(-50%);
+      -moz-transform:translateY(-50%);
+      transform:translateY(-50%);
+      background: none;
+      img, h3, p, a{
+        display: none;
+      }
+
+    }
+    @media only screen and (max-width:1189px){
+      background-color:#eaeaea !important;
+      border-radius: 0;
+      border:0;
+      width:100%;
+      padding:0;
+      form{
+        padding:15px;
+      }
+      h3{
+        margin:10px 15px;
+        color:$main-color;
+        text-align: center;
+        font-size:18px;
+      }
+      p{
+        font-size:15px;
+        color:black;
+        text-align: center;
+        padding:10px 15px;
+        margin-bottom:0;
+      }
+      input, textarea{
+        background-color:transparent;
+      }
+    }
+  }
+}
+.reachus-form-mobile{
+  @media only screen and (max-width:1189px){
+    display: none;
+  }
+}
+.home{
+  .intro-text-wrapper{
+    background-color:white;
+    padding:50px;
+    @media only screen and (max-width:767px){
+      padding:15px;
+    }
+    h2{
+      color:#787878;
+    }
+    p{
+      color:#787878;
+    }
+  }
+  .diabetic-programs{
+    overflow: hidden;
+
+    li{
+      float:left;
+      width:33.333%;
+      &:first-child{
+        background-color:#0078a0;
+      }
+      &:nth-child(2){
+        background-color:#1998d5;
+      }
+      &:last-child{
+        background-color:#5cb1da;
+      }
+      a{
+        display: block;
+        line-height: 100px;
+        white-space: nowrap;
+        text-align: center;
+        color:white;
+        border:8px solid transparent;
+        transition:border-color 0.4s ease-out 0.2s; // Wait for ::before to finish before showing border
+        -webkit-transition:border-color 0.4s ease-out 0.2s; // Wait for ::before to finish before showing border
+        &:hover{
+          border-color:rgba(255,255,255,0.2);
+        }
+        @media only screen and (max-width:767px){
+          line-height: 60px;
+        }
+      }
+    }
+  }
+}
+
+.complications-menu-container{
+  padding:0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#F1F2F2;
+  @media only screen and (max-width:1100px){
+    display: none;
+  }
+  h2{
+    color:#787878;
+    margin-bottom:0;
+    margin-right: 20px;
+  }
+  li{
+    margin:20px 15px 20px 0;
+  }
+  a{
+    display: block;
+    width:272px;
+    text-align: right;
+    padding-right: 20px;
+    font-size:22px;
+    line-height: 65px;
+    background-color:white;
+    color:black;
+    position: relative;
+    @media only screen and (max-width:1400px){
+      width:200px;
+      font-size:16px;
+    }
+    &:hover{
+      color:$secondary-color !important;
+    }
+    &:before{
+      content:'';
+      display: block;
+      position: absolute;
+      width:83px;
+      height:56px;
+      left:4px;
+      top:-6px;
+      background-repeat: no-repeat;
+      background-position: left top;
+    }
+  }
+  .cardiovascular a:before{
+    background-image:url(library/images/cardiovascular-cropped.png);
+  }
+  .retinopathy a:before{
+    background-image:url(library/images/retinopathy-cropped.png);
+  }
+  .neuropathy a:before{
+    background-image:url(library/images/neuropathy-cropped.png);
+  }
+  .nephropathy a:before{
+    background-image:url(library/images/nephropathy-cropped.png);
+  }
+}

@@ -1,0 +1,33 @@
+.wp-pagenavi{
+  margin-left:14px;
+  margin-bottom:30px;
+  .pages{
+    border-radius: 4px;
+    padding:0 15px;
+    line-height: 35px;
+    display: inline-block;
+  }
+  span, a{
+    background-color:white;
+  }
+  .current,a.page,.nextpostslink,.previouspostslink, .extend, .first, .last{
+    border-radius: 4px;
+    width:35px;
+    line-height: 35px;
+    padding:0;
+    margin:0 2px;
+    font-size:14px;
+    text-align: center;
+    display: inline-block;
+  }
+  .first, .last{
+    width:70px;
+  }
+  a:hover{
+    border-color:$main-color;
+  }
+  .current{
+    border-color:$main-color !important;
+    color:$main-color;
+  }
+}

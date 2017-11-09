@@ -1,0 +1,63 @@
+.menu-social{
+  ul{
+    overflow: hidden;
+  }
+  li{
+    float:left;
+    margin-right:15px;
+  }
+  a{
+    display: block;
+    padding:0;
+    font-size:20px;
+  }
+  li a:before{
+    font-family: "FontAwesome";
+  }
+  li a[href*="wordpress.org"]:before,
+  li a[href*="wordpress.com"]:before {
+  	content: "\f19a";
+  }
+  li a[href*="facebook.com"]:before {
+  	content: "\f082";
+    color:#3B5998;
+  }
+  li a[href*="twitter.com"]:before {
+  	content: "\f099";
+    color:#00b2ff;
+  }
+  li a[href*="dribbble.com"]:before {
+  	content: "\f17d";
+  }
+  li a[href*="plus.google.com"]:before {
+  	content: "\f0d5";
+  }
+  li a[href*="pinterest.com"]:before {
+  	content: "\f0d2";
+  }
+  li a[href*="github.com"]:before {
+  	content: "\f09b";
+  }
+  li a[href*="tumblr.com"]:before {
+  	content: "\f173";
+  }
+  li a[href*="youtube.com"]:before {
+  	content: "\f167";
+    color:#cd201f;
+  }
+  li a[href*="flickr.com"]:before {
+  	content: "\f16e";
+  }
+  li a[href*="vimeo.com"]:before {
+  	content: "\f27d";
+  }
+  li a[href*="instagram.com"]:before {
+  	content: "\f16d";
+  }
+  li a[href*="codepen.io"]:before {
+  	content: "\f1cb";
+  }
+  li a[href*="linkedin.com"]:before {
+  	content: "\f0e1";
+  }
+}

@@ -1,0 +1,24 @@
+.logos-list{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  &.single-row{
+    flex-wrap: nowrap;
+  }
+  img{
+    border:0;
+    padding:10px;
+    box-sizing: border-box;
+    display: block;
+  }
+  &.three-columns img{
+    width:33%;
+  }
+  &.four-columns img{
+    width:25%;
+  }
+  &.five-columns img{
+    width:20%;
+  }
+}

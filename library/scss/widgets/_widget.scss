@@ -1,0 +1,24 @@
+.individual-testimonial{
+  > span{
+    font-size:25px;
+  }
+  .it-author-avatar img{
+    width:50px;
+    display: block;
+    margin:0 auto;
+    border-radius: 100px;
+  }
+  footer{
+    text-align: center;
+    margin-top:10px;
+  }
+  .it-author-description{
+    font-size:14px;
+  }
+  .it-author-rating{
+    margin:10px 0;
+  }
+  cite{
+    font-weight: bold;
+  }
+}

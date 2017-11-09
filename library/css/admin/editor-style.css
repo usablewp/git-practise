@@ -1,0 +1,10 @@
+@import url('//fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,400i,700');
+@import url( '../../../style.css' );
+
+body#tinymce {
+  background-color:white;
+	min-height: 50px;
+	margin:    0 auto;
+	padding:   15px;
+	border:    none;
+}

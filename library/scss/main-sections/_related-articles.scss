@@ -1,0 +1,186 @@
+.more-articles{
+	li{
+		padding-bottom:2%;
+		float:left;
+		width:25%;
+		margin-bottom:20px;
+	}
+	ul{
+		margin-left:-5px;
+		margin-right:-5px;
+	}
+}
+.more-articles .n-1-col{
+	@media only screen and (min-width:768px){
+		margin:0;
+	}
+}
+.n-1-col li{
+	width:100%;
+	@media only screen and (min-width:768px){
+		padding:0;
+	}
+	@media only screen and (max-width:767px){
+		width:33.3333333%;
+	}
+}
+.n-2-col li{
+	width:50%;
+}
+.n-3-col li{
+	width:33.333333%;
+}
+.n-4-col li{
+	width:25%;
+}
+.n-5-col li{
+	width:20%;
+}
+.n-6-col li{
+	width:16.6666667%;
+
+}
+.n-5-col,.n-6-col{
+	li{
+		@media only screen and (max-width:767px){
+			width:33.333333%;
+		}
+	}
+}
+.n-1-col,.n-2-col,.n-3-col,.n-4-col,.n-5-col,.n-6-col{
+	li{
+		float:left;
+		@media only screen and (max-width:600px){
+			width:50%;
+		}
+	}
+}
+
+/* More articles List Styling */
+
+.more-articles-list{
+	ul,ol{
+		margin:0;
+		padding:0;
+		list-style: none;
+	}
+	li{
+		a{
+			display: block;
+			padding:10px 0;
+			border-bottom:1px solid #ccc;
+		}
+	}
+	li:last-child a{
+		border-bottom:0;
+	}
+
+	//Ol Styling
+	ol {
+   		counter-reset:li; /* Initiate a counter */
+   		margin-left:0; /* Remove the default left margin */
+   		padding-left:0; /* Remove the default left padding */
+	}
+	ol > li {
+	    position:relative; /* Create a positioning context */
+	    list-style:none; /* Disable the normal item numbering */
+	}
+	ol > li > a{
+		padding-left:50px;
+		min-height: 60px;
+	}
+	ol > li:before {
+	    content:counter(li); /* Use the counter as content */
+	    counter-increment:li; /* Increment the counter by 1 */
+	    /* Position and style the number */
+	    position:absolute;
+	    top:0;
+	    -moz-box-sizing:border-box;
+	    -webkit-box-sizing:border-box;
+	    box-sizing:border-box;
+	    /* Some space between the number and the content in browsers that support
+	       generated content but not positioning it (Camino 2 is one example) */
+	    font-size: 40px;
+	    text-align:center;
+	}
+	li ol,
+	li ul {margin-top:6px;}
+	ol ol li:last-child {margin-bottom:0;}
+}
+
+.more-articles .type-2,.more-articles .type-3{
+	li{
+		margin:0;
+		padding-top:10px;
+		padding-bottom:10px;
+		&:first-child{
+			@media only screen and (min-width:768px){
+				padding-top:0;
+			}
+		}
+		&:last-child{
+			@media only screen and (min-width:768px){
+				padding-bottom:0;
+			}
+		}
+		@media only screen and (max-width:550px){
+			width: 100%;
+		}
+	}
+	h3,h4{
+		margin-top:0;
+		margin-left:35%;
+	}
+	.morefrom-article-thumb{
+		float:left;
+		width:30%;
+	}
+}
+.more-articles .type-3 li{
+	border-bottom:1px solid #ccc;
+	&:last-child{
+		border-bottom:0;
+	}
+}
+
+/* More articles all types combined Styling */
+
+.more-articles,.more-articles-carousel,.more-articles-list {
+	text-align: left;
+	h4 a,h3 a{
+		display: block;
+		font-size: 16px;
+	}
+}
+.more-articles,.more-articles-carousel{
+	li{
+		padding:5px;
+	}
+	img{
+		width:100%;
+	}
+	.morefrom-article-thumb{
+		overflow: hidden;
+	}
+	h4{
+		text-align: left;
+	}
+}
+.more-articles.type-1{
+	a{
+		font-family: "Droid Sans",sans-serif;
+		font-size:14px;
+		line-height: 1.4;
+	}
+}
+.related-article-container{
+	border-radius: 4px;
+	h4{
+		margin:0;
+		padding:10px;
+	}
+	img{
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+}

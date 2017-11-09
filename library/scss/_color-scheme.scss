@@ -1,0 +1,98 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * General Colors
+ * ----------------------------------------------------------------------------------------
+ */
+
+// Text color
+body,
+p,
+.wpcf7 .wpcf7-form label,
+.tabs-nav li.tabs-selected a,
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="range"],
+input[type="date"],
+input[type="file"],
+input[type="password"],
+textarea,
+select
+{
+  color:black;
+}
+
+// Heading text color
+h1,h2,h3,h4,h5,h6{
+  &, a{
+    color:black;
+  }
+}
+
+//Primary color as text color
+a,
+a:hover,
+a:focus,
+.single-post blockquote p,
+.required-message{
+  color:$main-color;
+}
+
+#menu-primary{
+  a{
+    color:white;
+    &:hover, &:focus{
+      color:$main-color;
+    }
+  }
+  .current_page_parent > a,
+  .current-menu-item > a,
+  .current-page-ancestor > a{
+    color:$main-color;
+  }
+}
+
+
+/**
+ * ----------------------------------------------------------------------------------------
+ * Dropdown Colors
+ * ----------------------------------------------------------------------------------------
+ */
+.menu li ul{
+  background-color:white;
+}
+.menu li ul a{
+  color:#222;
+}
+.menu li ul a:hover, .menu li ul a:focus{
+  color:#222;
+  background-color:#dadada;
+}
+#off-canvas .sub-menu{
+  background-color:#eee;
+}
+
+
+/**
+ * ----------------------------------------------------------------------------------------
+ * Table Colors
+ * ----------------------------------------------------------------------------------------
+ */
+
+// Table header background color and text color
+table thead th,
+table tfoot th,
+#main-content tfoot th,
+#main-content thead th{
+  background-color:#fafafa;
+  color:#666;
+}
+
+// Table Body background color and text color
+table tbody td,
+#main-content tbody td{
+  background-color:#fafafa;
+  color:#666;
+}
